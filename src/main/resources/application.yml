@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: lsp-berkas-service
+  data:
+    mongodb:
+      uri: mongodb://root:asdqwe123@ds259367.mlab.com:59367/lsp-berkas
+  security:
+    user:
+      password: ${eureka.password}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://root:asdqwe123@localhost:8761}/eureka/
+server:
+  port: 8789
